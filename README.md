@@ -1,4 +1,4 @@
-# ProjetoPooII_APPInova
+# Projeto Programação Orientada ao Objeto II - API InovaWeek
 <p>Projeto de uma API para o inovaweek (UVV), sistema de avaliação dos grupos.<br>
 Componentes do grupo:<br>
 1- Nathalia Bertordo<br>
