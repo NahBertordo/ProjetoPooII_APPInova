@@ -26,7 +26,7 @@ class AlunoController {
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -48,7 +48,7 @@ class AlunoController {
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -64,7 +64,7 @@ class AlunoController {
             }
             catch (error) {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
