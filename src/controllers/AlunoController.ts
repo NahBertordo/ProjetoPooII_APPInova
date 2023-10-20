@@ -26,7 +26,7 @@ class AlunoController {
     const result = await AlunoServices.criarAluno(newAluno)
     if (result) {
       res.status(200).json({
-        status: 'Aluno criado com sucesso!',
+        status: 'Aluno foi criado com sucesso!',
         aluno: result,
       })
     } else {
