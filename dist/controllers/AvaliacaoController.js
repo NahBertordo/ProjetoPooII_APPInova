@@ -20,7 +20,7 @@ class AvaliacaoController {
             const result = yield AvaliacaoServices_1.default.listarAvaliacao();
             if (result) {
                 res.status(200).json({
-                    status: 'Avaliacoes listadas com sucesso!',
+                    status: 'Avaliacoes foram listadas com sucesso!',
                     avaliacao: result,
                 });
             }
@@ -42,7 +42,7 @@ class AvaliacaoController {
             const result = yield AvaliacaoServices_1.default.criarAvaliacao(newAvaliacao);
             if (result) {
                 res.status(200).json({
-                    status: 'Avaliacao criada com sucesso!',
+                    status: 'Avaliacao foi criada com sucesso!',
                     avaliacao: result,
                 });
             }
