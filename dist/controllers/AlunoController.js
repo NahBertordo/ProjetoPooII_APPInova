@@ -20,13 +20,13 @@ class AlunoController {
             const result = yield AlunoServices_1.default.listarAluno();
             if (result) {
                 res.status(200).json({
-                    status: 'Alunos listados com sucesso!',
+                    status: 'Alunos foram listados com sucesso!',
                     aluno: result,
                 });
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -42,13 +42,13 @@ class AlunoController {
             const result = yield AlunoServices_1.default.criarAluno(newAluno);
             if (result) {
                 res.status(200).json({
-                    status: 'Aluno criado com sucesso!',
+                    status: 'Aluno foi criado com sucesso!',
                     aluno: result,
                 });
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -59,12 +59,12 @@ class AlunoController {
             try {
                 yield AlunoServices_1.default.deletarAluno(matricula);
                 res.status(200).json({
-                    status: 'Aluno deletado com sucesso!',
+                    status: 'Aluno foi deletado com sucesso!',
                 });
             }
             catch (error) {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
