@@ -20,13 +20,13 @@ class EstandeController {
             const result = yield EstandeServices_1.default.listarEstande();
             if (result) {
                 res.status(200).json({
-                    status: 'Estandes listados com sucesso!',
+                    status: 'Estandes foram listados com sucesso!',
                     estande: result,
                 });
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -42,13 +42,13 @@ class EstandeController {
             const result = yield EstandeServices_1.default.criarEstande(newEstande);
             if (result) {
                 res.status(200).json({
-                    status: 'Estande criado com sucesso!',
+                    status: 'Estande foi criado com sucesso!',
                     estande: result,
                 });
             }
             else {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
@@ -59,12 +59,12 @@ class EstandeController {
             try {
                 yield EstandeServices_1.default.deletarEstande(idEstande);
                 res.status(200).json({
-                    status: 'Estande deletado com sucesso!',
+                    status: 'Estande foi deletado com sucesso!',
                 });
             }
             catch (error) {
                 res.status(200).json({
-                    status: 'erro',
+                    status: 'erro!',
                 });
             }
         });
